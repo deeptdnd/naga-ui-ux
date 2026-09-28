@@ -97,7 +97,7 @@ function CaseStudy() {
           </div>
           <div>
             <p className="text-xs uppercase tracking-[0.15em] text-ink/50">Outcome</p>
-            <p className="mt-1 font-medium">{project.outcomes[0].value}</p>
+            <p className="mt-1 font-medium">{project.outcomes[0]?.value}</p>
           </div>
         </div>
         <img
