@@ -148,8 +148,8 @@ function Index() {
 
       {/* ABOUT */}
       <section id="about" className="scroll-mt-16 bg-ink text-paper">
-        <div className="mx-auto grid max-w-[1440px] grid-cols-12 gap-10 px-6 py-24 sm:px-10">
-          <div className="col-span-12 md:col-span-5">
+        <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-10 px-6 py-24 sm:px-10 md:grid-cols-12">
+          <div className="min-w-0 md:col-span-5">
             <img
               src={portrait.url}
               alt="Portrait of Deepthi Doddaka"
@@ -159,7 +159,7 @@ function Index() {
               className="aspect-[4/5] w-full object-cover grayscale transition-all duration-500 hover:grayscale-0"
             />
           </div>
-          <div className="col-span-12 md:col-span-6 md:col-start-7">
+          <div className="min-w-0 md:col-span-6 md:col-start-7">
             <h2 className="border-b border-paper/25 pb-4 text-4xl font-extrabold uppercase tracking-tight sm:text-5xl">
               About
             </h2>
