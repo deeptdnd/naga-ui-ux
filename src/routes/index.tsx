@@ -136,7 +136,7 @@ function Index() {
           <div className="col-span-12 md:col-span-4">
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-cream/50">About</p>
             <img
-              src={portrait}
+              src={portrait.url}
               alt="Portrait of Deepthi Doddaka"
               width={800}
               height={1008}
