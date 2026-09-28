@@ -137,7 +137,7 @@ function Index() {
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-cream/50">About</p>
             <img
               src={portrait}
-              alt="Deepthi Doddaka in her studio"
+              alt="Portrait of Deepthi Doddaka"
               width={800}
               height={1008}
               loading="lazy"
