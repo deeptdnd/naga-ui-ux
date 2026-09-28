@@ -172,7 +172,7 @@ function Index() {
             </p>
             <div className="mt-12 grid grid-cols-2 gap-8 font-mono text-sm uppercase">
               <div>
-                <p className="mb-3 text-ink/0 text-paper/50">Design</p>
+                <p className="mb-3 text-paper/50">Design</p>
                 <ul className="space-y-1.5">
                   {["Figma", "Design systems", "Prototyping", "User research", "Usability testing"].map(
                     (skill) => (
