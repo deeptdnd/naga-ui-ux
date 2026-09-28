@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { projects } from "@/lib/projects";
-import portrait from "@/assets/portrait.jpg";
+import portrait from "@/assets/portrait.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -136,8 +136,8 @@ function Index() {
           <div className="col-span-12 md:col-span-4">
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-cream/50">About</p>
             <img
-              src={portrait}
-              alt="Deepthi Doddaka in her studio"
+              src={portrait.url}
+              alt="Portrait of Deepthi Doddaka"
               width={800}
               height={1008}
               loading="lazy"
