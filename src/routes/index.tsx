@@ -102,9 +102,9 @@ function Index() {
                   <div className="relative overflow-hidden">
                     <img
                       src={project.image}
-                      alt={project.title}
-                      width={1024}
-                      height={640}
+                      alt={`Illustrative interface concept for ${project.category.toLowerCase()} work`}
+                      width={1536}
+                      height={960}
                       loading="lazy"
                       className="card-img aspect-[16/10] w-full object-cover grayscale group-hover:grayscale-0"
                     />
