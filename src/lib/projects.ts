@@ -1,7 +1,7 @@
-import northwind from "@/assets/work-northwind.jpg";
-import pulse from "@/assets/work-pulse.jpg";
-import loom from "@/assets/work-loom.jpg";
-import haven from "@/assets/work-haven.jpg";
+import ohioHealth from "@/assets/work-ohio-health.jpg";
+import wellsFargo from "@/assets/work-wells-fargo.jpg";
+import hclTechnologies from "@/assets/work-hcl-technologies.jpg";
+import cognizant from "@/assets/work-cognizant.jpg";
 
 export type Project = {
   slug: string;
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     title: "Ohio Health — clear care experiences across web and mobile",
     summary:
       "Responsive web and mobile product experiences built on reusable components and design-system patterns.",
-    image: pulse,
+    image: ohioHealth,
     tint: "bg-fog",
     role: "Senior Product Designer",
     timeline: "Jan 2025 – Present · Columbus, Ohio",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     title: "Wells Fargo — intuitive enterprise banking workflows",
     summary:
       "Turned complex financial-services requirements into intuitive navigation, workflows and responsive UI.",
-    image: northwind,
+    image: wellsFargo,
     tint: "bg-fog",
     role: "UI/UX Designer",
     timeline: "Nov 2023 – Dec 2024 · Cincinnati, Ohio",
@@ -93,7 +93,7 @@ export const projects: Project[] = [
     title: "HCL Technologies — interactive dashboards at scale",
     summary:
       "Application interfaces, dashboards and reusable components for complex digital experiences.",
-    image: loom,
+    image: hclTechnologies,
     tint: "bg-fog",
     role: "UI/UX Designer",
     timeline: "Feb 2022 – May 2023 · Vijayawada, India",
@@ -126,7 +126,7 @@ export const projects: Project[] = [
     title: "Cognizant — responsive web from requirements to reality",
     summary:
       "Translated business and user requirements into responsive web interfaces and clear information architecture.",
-    image: haven,
+    image: cognizant,
     tint: "bg-fog",
     role: "UI/UX Designer",
     timeline: "Aug 2021 – Jan 2022 · Bangalore, India",

@@ -109,11 +109,12 @@ function CaseStudy() {
         </div>
         <img
           src={project.image}
-          alt={project.title}
-          width={1024}
-          height={640}
+          alt={`Illustrative interface concept for ${project.category.toLowerCase()} work`}
+          width={1536}
+          height={960}
           className={`mt-12 w-full object-cover ${project.tint}`}
         />
+        <p className="mt-3 font-mono text-xs text-ink/60">Illustrative concept visual, not a product screenshot.</p>
       </section>
 
       {/* PROBLEM */}
