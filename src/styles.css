@@ -1,182 +1,180 @@
-// ============= Full file contents =============
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
 
-1: @import "tailwindcss" source(none);
-2: @source "../src";
-3: @import "tw-animate-css";
-4: 
-5: @custom-variant dark (&:is(.dark *));
-6: 
-7: /*
-8:  * Design system — "Swiss Grid Minimalist" portfolio.
-9:  * White canvas, black ink, electric blue accent, Inter + JetBrains Mono.
-10:  * All colors defined as oklch tokens; components never hardcode colors.
-11:  */
-12: 
-13: @theme inline {
-14:   --radius-sm: calc(var(--radius) - 4px);
-15:   --radius-md: calc(var(--radius) - 2px);
-16:   --radius-lg: var(--radius);
-17:   --radius-xl: calc(var(--radius) + 4px);
-18:   --radius-2xl: calc(var(--radius) + 8px);
-19:   --radius-3xl: calc(var(--radius) + 12px);
-20:   --radius-4xl: calc(var(--radius) + 16px);
-21: 
-22:   --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
-23:   --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
-24:   --font-mono: "JetBrains Mono", ui-monospace, monospace;
-25: 
-26:   --color-background: var(--background);
-27:   --color-foreground: var(--foreground);
-28:   --color-card: var(--card);
-29:   --color-card-foreground: var(--card-foreground);
-30:   --color-popover: var(--popover);
-31:   --color-popover-foreground: var(--popover-foreground);
-32:   --color-primary: var(--primary);
-33:   --color-primary-foreground: var(--primary-foreground);
-34:   --color-secondary: var(--secondary);
-35:   --color-secondary-foreground: var(--secondary-foreground);
-36:   --color-muted: var(--muted);
-37:   --color-muted-foreground: var(--muted-foreground);
-38:   --color-accent: var(--accent);
-39:   --color-accent-foreground: var(--accent-foreground);
-40:   --color-destructive: var(--destructive);
-41:   --color-destructive-foreground: var(--destructive-foreground);
-42:   --color-border: var(--border);
-43:   --color-input: var(--input);
-44:   --color-ring: var(--ring);
-45:   --color-chart-1: var(--chart-1);
-46:   --color-chart-2: var(--chart-2);
-47:   --color-chart-3: var(--chart-3);
-48:   --color-chart-4: var(--chart-4);
-49:   --color-chart-5: var(--chart-5);
-50:   --color-sidebar: var(--sidebar);
-51:   --color-sidebar-foreground: var(--sidebar-foreground);
-52:   --color-sidebar-primary: var(--sidebar-primary);
-53:   --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-54:   --color-sidebar-accent: var(--sidebar-accent);
-55:   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-56:   --color-sidebar-border: var(--sidebar-border);
-57:   --color-sidebar-ring: var(--sidebar-ring);
-58: 
-59:   /* Swiss Grid palette */
-60:   --color-paper: var(--paper);
-61:   --color-ink: var(--ink);
-62:   --color-blue: var(--blue);
-63:   --color-fog: var(--fog);
-64: }
-65: 
-66: :root {
-67:   --radius: 0rem;
-68: 
-69:   --paper: oklch(1 0 0);
-70:   --ink: oklch(0.145 0 0);
-71:   --blue: oklch(0.546 0.245 262.881);
-72:   --fog: oklch(0.961 0 0);
-73: 
-74:   --background: var(--paper);
-75:   --foreground: var(--ink);
-76:   --card: var(--paper);
-77:   --card-foreground: var(--ink);
-78:   --popover: var(--paper);
-79:   --popover-foreground: var(--ink);
-80:   --primary: var(--ink);
-81:   --primary-foreground: var(--paper);
-82:   --secondary: var(--fog);
-83:   --secondary-foreground: var(--ink);
-84:   --muted: var(--fog);
-85:   --muted-foreground: oklch(0.52 0 0);
-86:   --accent: var(--blue);
-87:   --accent-foreground: var(--paper);
-88:   --destructive: oklch(0.577 0.245 27.325);
-89:   --destructive-foreground: var(--paper);
-90:   --border: var(--ink);
-91:   --input: var(--ink);
-92:   --ring: var(--blue);
-93:   --chart-1: var(--blue);
-94:   --chart-2: oklch(0.145 0 0);
-95:   --chart-3: oklch(0.7 0 0);
-96:   --chart-4: oklch(0.85 0 0);
-97:   --chart-5: oklch(0.4 0 0);
-98:   --sidebar: var(--paper);
-99:   --sidebar-foreground: var(--ink);
-100:   --sidebar-primary: var(--ink);
-101:   --sidebar-primary-foreground: var(--paper);
-102:   --sidebar-accent: var(--fog);
-103:   --sidebar-accent-foreground: var(--ink);
-104:   --sidebar-border: var(--border);
-105:   --sidebar-ring: var(--ring);
-106: }
-107: 
-108: .dark {
-109:   --background: var(--ink);
-110:   --foreground: var(--paper);
-111:   --card: oklch(0.205 0 0);
-112:   --card-foreground: var(--paper);
-113:   --popover: oklch(0.205 0 0);
-114:   --popover-foreground: var(--paper);
-115:   --primary: var(--paper);
-116:   --primary-foreground: var(--ink);
-117:   --secondary: oklch(0.269 0 0);
-118:   --secondary-foreground: var(--paper);
-119:   --muted: oklch(0.269 0 0);
-120:   --muted-foreground: oklch(0.708 0 0);
-121:   --accent: var(--blue);
-122:   --accent-foreground: var(--paper);
-123:   --destructive: oklch(0.704 0.191 22.216);
-124:   --destructive-foreground: var(--paper);
-125:   --border: oklch(1 0 0 / 20%);
-126:   --input: oklch(1 0 0 / 25%);
-127:   --ring: var(--blue);
-128:   --chart-1: var(--blue);
-129:   --chart-2: oklch(0.9 0 0);
-130:   --chart-3: oklch(0.6 0 0);
-131:   --chart-4: oklch(0.35 0 0);
-132:   --chart-5: oklch(0.5 0 0);
-133:   --sidebar: oklch(0.205 0 0);
-134:   --sidebar-foreground: var(--paper);
-135:   --sidebar-primary: var(--blue);
-136:   --sidebar-primary-foreground: var(--ink);
-137:   --sidebar-accent: oklch(0.269 0 0);
-138:   --sidebar-accent-foreground: var(--paper);
-139:   --sidebar-border: oklch(1 0 0 / 20%);
-140:   --sidebar-ring: var(--blue);
-141: }
-142: 
-143: @layer base {
-144:   * {
-145:     border-color: var(--color-border);
-146:   }
-147: 
-148:   body {
-149:     background-color: var(--color-background);
-150:     color: var(--color-foreground);
-151:     font-family: var(--font-body);
-152:   }
-153: 
-154:   ::selection {
-155:     background-color: var(--color-blue);
-156:     color: var(--color-paper);
-157:   }
-158: }
-159: 
-160: @layer components {
-161:   /* Underline sweep on hover for nav and inline links */
-162:   .link-underline {
-163:     background-image: linear-gradient(currentColor, currentColor);
-164:     background-size: 0% 2px;
-165:     background-position: 0 100%;
-166:     background-repeat: no-repeat;
-167:     transition: background-size 0.3s ease;
-168:   }
-169:   .link-underline:hover {
-170:     background-size: 100% 2px;
-171:   }
-172: 
-173:   /* Work card imagery: sharp, desaturated until hover */
-174:   .card-img {
-175:     transition: filter 0.5s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
-176:   }
-177:   .group:hover .card-img {
-178:     transform: scale(1.04);
-179:   }
-180: }
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design system — "Swiss Grid Minimalist" portfolio.
+ * White canvas, black ink, electric blue accent, Inter + JetBrains Mono.
+ * All colors defined as oklch tokens; components never hardcode colors.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Swiss Grid palette */
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-blue: var(--blue);
+  --color-fog: var(--fog);
+}
+
+:root {
+  --radius: 0rem;
+
+  --paper: oklch(1 0 0);
+  --ink: oklch(0.145 0 0);
+  --blue: oklch(0.546 0.245 262.881);
+  --fog: oklch(0.961 0 0);
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: var(--paper);
+  --card-foreground: var(--ink);
+  --popover: var(--paper);
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--paper);
+  --secondary: var(--fog);
+  --secondary-foreground: var(--ink);
+  --muted: var(--fog);
+  --muted-foreground: oklch(0.52 0 0);
+  --accent: var(--blue);
+  --accent-foreground: var(--paper);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: var(--paper);
+  --border: var(--ink);
+  --input: var(--ink);
+  --ring: var(--blue);
+  --chart-1: var(--blue);
+  --chart-2: oklch(0.145 0 0);
+  --chart-3: oklch(0.7 0 0);
+  --chart-4: oklch(0.85 0 0);
+  --chart-5: oklch(0.4 0 0);
+  --sidebar: var(--paper);
+  --sidebar-foreground: var(--ink);
+  --sidebar-primary: var(--ink);
+  --sidebar-primary-foreground: var(--paper);
+  --sidebar-accent: var(--fog);
+  --sidebar-accent-foreground: var(--ink);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+}
+
+.dark {
+  --background: var(--ink);
+  --foreground: var(--paper);
+  --card: oklch(0.205 0 0);
+  --card-foreground: var(--paper);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: var(--paper);
+  --primary: var(--paper);
+  --primary-foreground: var(--ink);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: var(--paper);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: var(--blue);
+  --accent-foreground: var(--paper);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: var(--paper);
+  --border: oklch(1 0 0 / 20%);
+  --input: oklch(1 0 0 / 25%);
+  --ring: var(--blue);
+  --chart-1: var(--blue);
+  --chart-2: oklch(0.9 0 0);
+  --chart-3: oklch(0.6 0 0);
+  --chart-4: oklch(0.35 0 0);
+  --chart-5: oklch(0.5 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: var(--paper);
+  --sidebar-primary: var(--blue);
+  --sidebar-primary-foreground: var(--ink);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: var(--paper);
+  --sidebar-border: oklch(1 0 0 / 20%);
+  --sidebar-ring: var(--blue);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+  }
+
+  ::selection {
+    background-color: var(--color-blue);
+    color: var(--color-paper);
+  }
+}
+
+@layer components {
+  /* Underline sweep on hover for nav and inline links */
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
+  }
+  .link-underline:hover {
+    background-size: 100% 2px;
+  }
+
+  /* Work card imagery: sharp, desaturated until hover */
+  .card-img {
+    transition: filter 0.5s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .group:hover .card-img {
+    transform: scale(1.04);
+  }
+}
