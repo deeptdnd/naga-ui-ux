@@ -178,3 +178,18 @@
     transform: scale(1.04);
   }
 }
+
+@layer components {
+  /* Huge outlined marquee text (sample-style) */
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1.5px color-mix(in oklab, var(--paper) 55%, transparent);
+  }
+  .marquee-track {
+    animation: marquee 28s linear infinite;
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
