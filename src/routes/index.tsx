@@ -170,7 +170,7 @@ function Index() {
               Research. M.S. in Computer Science, Wright State University.
               Google UX Design and Professional Figma UI/UX certified.
             </p>
-            <div className="mt-12 grid grid-cols-2 gap-8 font-mono text-sm uppercase">
+            <div className="mt-12 grid grid-cols-1 gap-8 font-mono text-sm uppercase sm:grid-cols-2">
               <div>
                 <p className="mb-3 text-paper/50">Design</p>
                 <ul className="space-y-1.5">
