@@ -28,7 +28,7 @@ export const projects: Project[] = [
     summary:
       "Responsive web and mobile product experiences built on reusable components and design-system patterns.",
     image: pulse,
-    tint: "bg-sage/20",
+    tint: "bg-fog",
     role: "Senior Product Designer",
     timeline: "Jan 2025 – Present · Columbus, Ohio",
     problem:
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     summary:
       "Turned complex financial-services requirements into intuitive navigation, workflows and responsive UI.",
     image: northwind,
-    tint: "bg-sun/30",
+    tint: "bg-fog",
     role: "UI/UX Designer",
     timeline: "Nov 2023 – Dec 2024 · Cincinnati, Ohio",
     problem:
@@ -94,7 +94,7 @@ export const projects: Project[] = [
     summary:
       "Application interfaces, dashboards and reusable components for complex digital experiences.",
     image: loom,
-    tint: "bg-plum/15",
+    tint: "bg-fog",
     role: "UI/UX Designer",
     timeline: "Feb 2022 – May 2023 · Vijayawada, India",
     problem:
@@ -127,7 +127,7 @@ export const projects: Project[] = [
     summary:
       "Translated business and user requirements into responsive web interfaces and clear information architecture.",
     image: haven,
-    tint: "bg-coral/15",
+    tint: "bg-fog",
     role: "UI/UX Designer",
     timeline: "Aug 2021 – Jan 2022 · Bangalore, India",
     problem:
