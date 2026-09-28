@@ -21,135 +21,135 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "northwind",
-    category: "Fintech",
-    year: "2024",
-    title: "Northwind — onboarding that people finish",
+    slug: "ohio-health",
+    category: "Healthcare",
+    year: "2025",
+    title: "Ohio Health — clear care experiences across web and mobile",
     summary:
-      "Rebuilt a 14-step signup into a 3-step flow with progressive disclosure and a live progress model.",
-    image: northwind,
-    tint: "bg-sun/30",
-    role: "Lead Product Designer",
-    timeline: "6 months · 2024",
-    problem:
-      "Northwind's signup asked for everything up front: fourteen steps of forms before a new customer saw a single useful screen. Completion sat near 40%, support tickets were dominated by identity-check confusion, and the team had no shared picture of where people were leaving.",
-    approach: [
-      {
-        heading: "Research before redesign",
-        body: "Ran 18 moderated sessions and instrumented the existing funnel. The data showed 61% of drop-offs happened in two steps that duplicated information the app already had.",
-      },
-      {
-        heading: "Progressive disclosure",
-        body: "Rebuilt the flow into three steps: account, verification, first goal. Every field earns its place — nothing is asked until the user has a reason to give it.",
-      },
-      {
-        heading: "A live progress model",
-        body: "Replaced the linear progress bar with an honest, stateful model that never resets, shows what verification actually checks, and recovers gracefully from errors.",
-      },
-    ],
-    outcomes: [
-      { value: "38%", label: "Reduction in onboarding drop-off" },
-      { value: "14 → 3", label: "Steps in the signup flow" },
-      { value: "-52%", label: "Identity-check support tickets" },
-    ],
-  },
-  {
-    slug: "pulse",
-    category: "Health",
-    year: "2024",
-    title: "Pulse — a calmer health dashboard",
-    summary:
-      "Turned a data-dense clinic tool into a readable daily summary for patients.",
+      "Responsive web and mobile product experiences built on reusable components and design-system patterns.",
     image: pulse,
     tint: "bg-sage/20",
-    role: "Product Designer",
-    timeline: "4 months · 2024",
+    role: "Senior Product Designer",
+    timeline: "Jan 2025 – Present · Columbus, Ohio",
     problem:
-      "Pulse's clinical dashboard was designed for practitioners, but patients were its main audience. Charts, acronyms and 30+ metrics on one screen left people anxious and calling the clinic to interpret their own results.",
+      "Complex healthcare products need to feel simple and consistent for everyone who uses them — across devices, abilities and contexts — while giving engineering a scalable foundation to build on.",
     approach: [
       {
-        heading: "Separate the two audiences",
-        body: "Mapped practitioner tasks against patient needs, then split the surface: a full clinical view for staff, a calm daily summary for patients.",
+        heading: "Flows before pixels",
+        body: "Create user flows, wireframes, high-fidelity screens and interactive prototypes in Figma, with detailed design specifications for complex product experiences.",
       },
       {
-        heading: "One number at a time",
-        body: "Designed a card system where each metric leads with plain language ('Your heart is resting well') and only reveals the chart on intent.",
+        heading: "Reusable by design",
+        body: "Develop reusable UI components and scalable patterns with Auto Layout and variants to keep products consistent and speed up development.",
       },
       {
-        heading: "Plain-language system",
-        body: "Wrote and tested a vocabulary of 40 labels with real patients, cutting comprehension time from minutes to seconds in usability testing.",
+        heading: "Accessible and clear",
+        body: "Apply accessibility, responsive design and visual hierarchy principles, partnering with Product, Engineering and UX Research from concept through implementation.",
       },
     ],
     outcomes: [
-      { value: "-64%", label: "Clinic calls about test results" },
-      { value: "92%", label: "Patients who read their summary weekly" },
-      { value: "40+", label: "Plain-language labels validated" },
+      { value: "Web + Mobile", label: "Responsive experiences delivered" },
+      { value: "Design system", label: "Reusable components & patterns" },
+      { value: "Concept → Ship", label: "End-to-end cross-functional delivery" },
     ],
   },
   {
-    slug: "loom-and-co",
-    category: "Commerce",
-    year: "2023",
-    title: "Loom & Co — checkout without friction",
+    slug: "wells-fargo",
+    category: "Financial services",
+    year: "2024",
+    title: "Wells Fargo — intuitive enterprise banking workflows",
     summary:
-      "A one-page checkout that lifted conversion and cut support tickets.",
+      "Turned complex financial-services requirements into intuitive navigation, workflows and responsive UI.",
+    image: northwind,
+    tint: "bg-sun/30",
+    role: "UI/UX Designer",
+    timeline: "Nov 2023 – Dec 2024 · Cincinnati, Ohio",
+    problem:
+      "Enterprise financial tools carry dense requirements and high stakes. Users needed navigation and workflows that felt intuitive without hiding the detail they rely on.",
+    approach: [
+      {
+        heading: "Research-led",
+        body: "Conducted usability testing, user interviews and feedback analysis to find usability issues and prioritize improvements.",
+      },
+      {
+        heading: "Validated with data",
+        body: "Applied analytics and A/B testing insights to validate design decisions and refine the experience.",
+      },
+      {
+        heading: "Clean handoff",
+        body: "Built reusable interface patterns in Figma and prepared clear specifications and documentation to support engineering implementation.",
+      },
+    ],
+    outcomes: [
+      { value: "Usability", label: "Testing & interview-driven iteration" },
+      { value: "A/B tested", label: "Data-validated design decisions" },
+      { value: "Patterns", label: "Reusable enterprise UI library" },
+    ],
+  },
+  {
+    slug: "hcl-technologies",
+    category: "Dashboards & apps",
+    year: "2023",
+    title: "HCL Technologies — interactive dashboards at scale",
+    summary:
+      "Application interfaces, dashboards and reusable components for complex digital experiences.",
     image: loom,
     tint: "bg-plum/15",
-    role: "UX Designer",
-    timeline: "3 months · 2023",
+    role: "UI/UX Designer",
+    timeline: "Feb 2022 – May 2023 · Vijayawada, India",
     problem:
-      "A five-page checkout with re-entered addresses, surprise shipping costs on the last step, and no way to edit earlier answers. Cart abandonment ran 15 points above the category benchmark.",
+      "Growing application suites were drifting visually and behaviorally. Screens needed a consistent hierarchy and a component foundation that could scale.",
     approach: [
       {
-        heading: "Audit the funnel",
-        body: "Session recordings and funnel analysis showed the shipping-cost reveal caused a third of all abandonment. Trust, not effort, was the bottleneck.",
+        heading: "Dashboards and layouts",
+        body: "Designed interactive application interfaces, dashboards, screen layouts, gameplay flows and visual assets with a consistent visual hierarchy.",
       },
       {
-        heading: "One honest page",
-        body: "Collapsed the flow into a single page with always-visible totals, editable summaries per section, and shipping costs calculated before checkout begins.",
+        heading: "Guidelines that scale",
+        body: "Developed reusable components and design guidelines to improve consistency and scalability across application screens.",
       },
       {
-        heading: "Detail by detail",
-        body: "Autofill-first inputs, inline validation written like a person, and a wallet-first payment order cut median completion time from 4.5 to 1.6 minutes.",
+        heading: "Feedback loops",
+        body: "Analyzed user feedback and A/B test results to refine interfaces, and partnered with developers for accurate implementation.",
       },
     ],
     outcomes: [
-      { value: "+18%", label: "Checkout conversion" },
-      { value: "4.5 → 1.6 min", label: "Median completion time" },
-      { value: "-31%", label: "Checkout support tickets" },
+      { value: "Dashboards", label: "Interactive app & data interfaces" },
+      { value: "Guidelines", label: "Scalable component documentation" },
+      { value: "A/B tested", label: "Feedback-driven refinements" },
     ],
   },
   {
-    slug: "haven",
-    category: "Mobile",
-    year: "2023",
-    title: "Haven — banking that reads like a note",
+    slug: "cognizant",
+    category: "Responsive web",
+    year: "2022",
+    title: "Cognizant — responsive web from requirements to reality",
     summary:
-      "A mobile bank redesigned around plain language and a single, honest balance.",
+      "Translated business and user requirements into responsive web interfaces and clear information architecture.",
     image: haven,
     tint: "bg-coral/15",
-    role: "Design Lead",
-    timeline: "8 months · 2023",
+    role: "UI/UX Designer",
+    timeline: "Aug 2021 – Jan 2022 · Bangalore, India",
     problem:
-      "Haven's app showed balances across five accounts, used bank jargon everywhere, and buried the two questions people actually ask: 'what do I have?' and 'what's safe to spend?'",
+      "Business requirements had to become navigable, accessible web experiences — with interaction behavior clear enough for Agile teams to build confidently.",
     approach: [
       {
-        heading: "Language first",
-        body: "Started with copy, not screens. Rewrote every label into plain language, then designed interfaces simple enough to carry it.",
+        heading: "Structure first",
+        body: "Created user flows and structured information architectures to communicate navigation and interaction behavior.",
       },
       {
-        heading: "One honest balance",
-        body: "Introduced a single 'safe to spend' number that accounts for upcoming bills, with the full account detail one swipe away.",
+        heading: "Prototype and test",
+        body: "Built interactive prototypes and ran usability testing to identify pain points and improve navigation.",
       },
       {
-        heading: "Calm by default",
-        body: "Reordered the home screen around one primary action per session and cut visible nav items from nine to four.",
+        heading: "Agile collaboration",
+        body: "Worked in cross-functional Agile/Scrum teams, documenting design decisions and supporting implementation.",
       },
     ],
     outcomes: [
-      { value: "+27%", label: "Weekly active usage" },
-      { value: "9 → 4", label: "Nav items on the home screen" },
-      { value: "4.8★", label: "App Store rating after relaunch" },
+      { value: "Responsive", label: "Web interfaces & high-fidelity design" },
+      { value: "IA", label: "Structured navigation & flows" },
+      { value: "Agile", label: "Cross-functional Scrum delivery" },
     ],
   },
 ];

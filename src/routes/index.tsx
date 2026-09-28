@@ -5,17 +5,17 @@ import portrait from "@/assets/portrait.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Deepthi Doddaka — UX Designer" },
+      { title: "Deepthi Doddaka — UI/UX Designer" },
       {
         name: "description",
         content:
-          "Portfolio of Deepthi Doddaka, a UX designer crafting calm, confident interfaces for fintech, health and commerce products.",
+          "Portfolio of Deepthi Doddaka, a UI/UX designer with 5+ years designing responsive web, mobile, dashboard and enterprise experiences.",
       },
       { property: "og:title", content: "Deepthi Doddaka — UX Designer" },
       {
         property: "og:description",
         content:
-          "UX designer crafting calm, confident interfaces for products people actually trust.",
+          "UI/UX designer with 5+ years across healthcare, financial services and enterprise apps.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -60,22 +60,22 @@ function Index() {
       <section className="mx-auto max-w-[1440px] px-6 pt-10 pb-20 sm:px-10">
         <div className="flex items-center gap-3 text-xs font-medium uppercase tracking-[0.2em] text-ink/60">
           <span className="size-2 rounded-full bg-coral"></span>
-          Available for select projects — 2026
+          UI/UX Designer · Columbus, Ohio
         </div>
         <h1 className="mt-8 max-w-[16ch] font-display text-[clamp(3.5rem,13vw,11rem)] font-semibold leading-[0.92] text-balance text-ink">
           Deepthi Doddaka
         </h1>
         <div className="mt-10 grid grid-cols-12 items-end gap-6">
           <p className="col-span-12 max-w-[24ch] font-display text-2xl leading-tight text-balance text-ink sm:text-3xl md:col-span-5 md:col-start-1">
-            UX designer crafting <span className="italic text-coral">calm</span>, confident
-            interfaces for products people actually trust.
+            UI/UX designer with 5+ years crafting <span className="italic text-coral">clear</span>,
+            accessible experiences for web, mobile and enterprise.
           </p>
           <div className="col-span-12 md:col-span-4 md:col-start-8 md:col-end-13">
             <div className="rounded-xl bg-cream p-6 ring-1 ring-black/5">
               <p className="mb-4 text-xs uppercase tracking-[0.18em] text-ink/50">Currently</p>
               <p className="font-display text-lg leading-snug">
-                Leading design for <span className="text-sage">Northwind</span> — a fintech
-                onboarding that cut drop-off by 38%.
+                Senior Product Designer at <span className="text-sage">Ohio Health</span> —
+                designing responsive care experiences and design systems.
               </p>
             </div>
           </div>
@@ -88,7 +88,7 @@ function Index() {
           <h2 className="max-w-[20ch] font-display text-4xl font-semibold leading-none text-balance sm:text-5xl">
             Selected work
           </h2>
-          <span className="text-sm font-medium text-ink/50">04 case studies</span>
+          <span className="text-sm font-medium text-ink/50">5+ years · 4 roles</span>
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-12">
@@ -146,21 +146,25 @@ function Index() {
           </div>
           <div className="col-span-12 md:col-span-7 md:col-start-6">
             <h2 className="max-w-[20ch] font-display text-4xl font-semibold leading-tight text-balance sm:text-5xl">
-              I design the quiet parts of products.
+              Pixel-precise, user-first, built to scale.
             </h2>
             <p className="mt-6 max-w-[52ch] text-pretty text-base text-cream/75 sm:text-lg">
-              For eight years I&apos;ve helped teams turn messy problems into interfaces that feel
-              obvious in hindsight. I care about hierarchy, honest copy, and the small details that
-              make a product feel made by a person.
+              For 5+ years I&apos;ve designed responsive web, mobile, dashboard and enterprise
+              experiences — translating requirements into user-friendly interfaces with Product,
+              Engineering and UX Research. M.S. in Computer Science, Wright State University. Google
+              UX Design and Professional Figma UI/UX certified.
             </p>
             <div className="mt-10 flex flex-wrap gap-2">
               {[
-                "Research",
-                "Wireframing",
+                "Figma",
                 "Design systems",
                 "Prototyping",
+                "User research",
+                "Usability testing",
                 "Accessibility",
-                "Figma",
+                "Dashboards",
+                "A/B testing",
+                "Information architecture",
               ].map((skill) => (
                 <span
                   key={skill}
@@ -183,16 +187,16 @@ function Index() {
           </h2>
           <div className="mt-10 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
             <a
-              href="mailto:hello@deepthidesign.com"
+              href="mailto:doddakanagadeepthi7@gmail.com"
               className="inline-flex items-center gap-2 rounded-full bg-ink py-3 pl-5 pr-5 text-base font-medium text-cream ring-1 ring-ink transition-colors hover:bg-cream hover:text-ink"
             >
-              hello@deepthidesign.com
+              doddakanagadeepthi7@gmail.com
               <span className="grid size-4 place-items-center rounded-full bg-coral text-[11px] font-semibold text-ink">
                 ↗
               </span>
             </a>
-            <a href="mailto:hello@deepthidesign.com" className="link-underline text-base font-medium">
-              Book a 20-min intro call
+            <a href="tel:+19375143839" className="link-underline text-base font-medium">
+              +1 (937) 514-3839
             </a>
           </div>
         </div>
